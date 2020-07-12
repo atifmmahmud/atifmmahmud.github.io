@@ -2297,13 +2297,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   .single-work .thumb .image {
     opacity: 1;
     display: block;
-    width: 25%; /* changed for phone */
-    height: 25%; /* changed for phone */
     transition: .5s ease;
     backface-visibility: hidden; }
   .single-work .middle {
-    width: 25%; /* changed for phone */
-    height: 25%; /* changed for phone */
     transition: .5s ease;
     opacity: 0;
     position: absolute;
