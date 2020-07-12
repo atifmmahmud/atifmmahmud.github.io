@@ -2058,7 +2058,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px 22px 10px 15px;
   position: relative;
   text-decoration: none;
-  width: 100%;
+  width: 25%; /* changed for phone */
   display: block;
   outline: none;
   font-weight: 400; }
@@ -2087,8 +2087,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #e45447; }
 
 #mobile-body-overly {
-  width: 25%;
-  height: 250%;
+  width: 25%; /* changed for phone */
+  height: 25%; /* changed for phone */
   z-index: 997;
   top: 0;
   left: 0;
