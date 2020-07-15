@@ -98,6 +98,12 @@ a, a:focus, a:hover {
 .gray-bg {
   background: #f9f9ff; }
 
+
+.work-logo {
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
 h1, h2, h3,
 h4, h5, h6 {
   font-family: "Poppins", sans-serif;
