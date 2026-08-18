@@ -8,6 +8,31 @@
 <link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/favicon.png">
+
+<meta property="og:title" content="Atif M. Mahmud">
+<meta property="og:description" content="Software engineer, neuroscience researcher, and entrepreneur building tools for better cognitive health.">
+<meta property="og:image" content="https://atifm.com/atif-mahmud-headshot.jpg">
+<meta property="og:url" content="https://atifm.com/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://atifm.com/img/atif-mahmud-headshot.jpg">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Atif M. Mahmud",
+  "url": "https://atifm.com",
+  "image": "https://atifm.com/img/atif-mahmud-headshot.jpg",
+  "sameAs": [
+    "https://www.linkedin.com/in/atifmmahmud/",
+    "https://github.com/atifmmahmud",
+    "https://medium.com/@atifmmahmud"
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -18,15 +43,20 @@
     <li><a href="#work">Work</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#volunteering">Volunteering</a></li>
-    <li><a href="#research">Research</a></li>
+   <!-- <li><a href="#research">Research</a></li> -->
     <li><a href="#contact">Contact</a></li>
   </ul>
 </nav>
 
 <header>
   <p class="label">Vancouver, BC</p>
-  <h1>Atif M. Mahmud</h1>
-  <p>Software engineer, neuroscience researcher, and entrepreneur building tools for better cognitive health.</p>
+  <div class="name-row">
+    <img src="img/atif-mahmud-headshot.jpg" alt="Atif M. Mahmud" class="avatar">
+    <div class="name-col">
+      <h1>Atif M. Mahmud</h1>
+      <p>Software engineer, neuroscience researcher, and entrepreneur building tools for better cognitive health.</p>
+    </div>
+  </div>
   <a class="button ghost" href="https://www.linkedin.com/in/atifmmahmud/" target="_blank"><i class="fa-brands fa-linkedin icon"></i>LinkedIn</a>
   <a class="button ghost" href="https://github.com/atifmmahmud" target="_blank"><i class="fa-brands fa-github icon"></i>GitHub</a>
   <a class="button ghost" href="https://medium.com/@atifmmahmud" target="_blank"><i class="fa-brands fa-medium icon"></i>Medium</a>
@@ -90,50 +120,78 @@
         <div class="row">
           <strong>Neurofeedback Software Engineer</strong><span class="meta">2026 - present</span>
         </div>
+        <a class="company" href="https://antle.iat.sfu.ca/" target="_blank">SFU Tangible Embodied Child-Computer Interaction (TECI) Laboratory</a>
+        <p>Building Mindfull, a Unity app that uses real-time EEG to help kids manage their emotions. Added wearable attention and relaxation tracking, plus LAN multiplayer so guardians can watch sessions and adjust difficulty as they go.</p>
       </div>
     </div>
     <div class="card">
-      <div class="logo"><img src="img/work/reframe.jpg" alt="C3D Logo"></div>
+      <div class="logo"><img src="img/work/sfu.png" alt="SFU Logo"></div>
       <div>
         <div class="row">
-          <strong>VR SDK Software Engineer</strong><span class="meta">2022 - 2024</span>
+          <strong>Neuroscience Researcher</strong><span class="meta">2025 - 2025</span>
         </div>
+        <a class="company" href="https://computationalgeronneuroscience.iat.sfu.ca/" target="_blank">SFU Computational Neuroscience Research Laboratory</a>
+        <p>Ran EEG sessions and 42 interviews for a study on how Apple Watch sleep and exercise tracking affects cognition, from setup through data collection.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="logo"><img src="img/work/reframe.jpg" alt="Reframe Logo"></div>
+      <div>
+        <div class="row">
+          <strong>Unity XR Developer</strong><span class="meta">2025 - 2025</span>
+        </div>
+        <a class="company" href="https://www.reframexr.com/" target="_blank">ReframeXR</a>
+        <p>Built a pipeline so new 3D models could be uploaded through a web dashboard and loaded straight into a Quest 3 app, no rebuild needed. Also moved the codebase from MRTK to OpenXR.</p>
       </div>
     </div>
     <div class="card">
       <div class="logo"><img src="img/work/c3d.jpg" alt="C3D Logo"></div>
       <div>
         <div class="row">
-          <strong>Role title</strong><span class="meta">2021 — 2023</span>
+          <strong>VR SDK Software Engineer</strong><span class="meta">2022 — 2024</span>
         </div>
-        <p>Company name — what you owned and shipped in this role.</p>
+        <a class="company" href="https://cognitive3d.com/" target="_blank">Cognitive3D</a>
+        <p>Built core features for a VR analytics SDK that worked across Quest, Vive, Pico, and HP Omnicept: tracking, multiplayer analytics for Photon, and docs that helped other developers get up to speed faster.</p>
       </div>
     </div>
     <div class="card">
-      <div class="logo"><img src="img/work/teck.png" alt="Teck Logo Logo"></div>
+      <div class="logo"><img src="img/work/p2l.jpg" alt="P2L Logo"></div>
       <div>
         <div class="row">
-          <strong>Role title</strong><span class="meta">2021 — 2023</span>
+          <strong>VR Developer Coach</strong><span class="meta">2022 — 2023</span>
         </div>
-        <p>Company name — what you owned and shipped in this role.</p>
+        <a class="company" href="https://www.p2linc.com/" target="_blank">P2L Inc.</a>
+        <p>Led a 4-person team building a VR training app for ice-resurfacer operators. Wrote the core gameplay systems in Unity and ran sprint planning.</p>
       </div>
     </div>
     <div class="card">
-      <div class="logo"><img src="img/work/teck.png" alt="Teck Logo Logo"></div>
+      <div class="logo"><img src="img/work/teck.png" alt="Teck Logo"></div>
       <div>
         <div class="row">
-          <strong>Role title</strong><span class="meta">2021 — 2023</span>
+          <strong>XR Developer</strong><span class="meta">2021 — 2022</span>
         </div>
-        <p>Company name — what you owned and shipped in this role.</p>
+        <a class="company" href="https://www.teck.com/" target="_blank">Teck Resources Ltd.</a>
+        <p>Built early versions of two tools for mine planning: a 3D annotation app geoscientists could use together, and a live map combining terrain data with vehicle tracking.</p>
       </div>
     </div>
     <div class="card">
-      <div class="logo">LOGO</div>
+      <div class="logo"><img src="img/work/precision.png" alt="Precision Logo"></div>
       <div>
         <div class="row">
-          <strong>Role title</strong><span class="meta">2020 — 2021</span>
+          <strong>VR Software Engineer</strong><span class="meta">2020 — 2021</span>
         </div>
-        <p>Company name — what you owned and shipped in this role.</p>
+        <a class="company" href="https://www.precisionostech.com/" target="_blank">PrecisionOS Technology</a>
+        <p>Led a VR surgical trainer that cut training time for a femoral nail procedure by up to 570%. Built in Unreal/Blueprints and refined based on direct feedback from surgeons.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="logo"><img src="img/work/eml.jfif" alt="EML Logo"></div>
+      <div>
+        <div class="row">
+          <strong>Technical Lead & Project Coordinator</strong><span class="meta">2019 — 2020</span>
+        </div>
+        <a class="company" href="https://eml.ubc.ca/" target="_blank">UBC Emerging Media Lab</a>
+        <p>Led the team behind ScholarsVR, a VR world that teaches scholarly writing through gameplay. Also helped build a separate VR tool that simulates patient interviews for med students.</p>
       </div>
     </div>
   </div>
@@ -144,19 +202,57 @@
   <h2>Things I've made</h2>
   <div class="grid cols-3">
     <div class="card tint">
-      <h3>gARden</h3>
+      <div class="project-head">
+        <img class="project-icon" src="img/projects/eeg.png" alt="">
+        <h3>Cognitve Load Classifier</h3>
+      </div>
+      <p>EEG based classification of cognitive task/load</p>
+      <div class="project-links">
+        <a href="https://github.com/atifmmahmud/cognitive-load-biomarkers" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://cognitive-load-biomarkers.streamlit.app/" target="_blank" aria-label="Play demo"><i class="fa-solid fa-gamepad"></i></a>
+      </div>
+    </div>
+    <div class="card tint">
+      <div class="project-head">
+        <img class="project-icon" src="img/projects/neuroviz.png" alt="">
+        <h3>Neuroviz</h3>
+      </div>
+      <p>3D visualization to teach brain anatomy</p>
+      <div class="project-links">
+        <a href="https://github.com/atifmmahmud/neuroviz" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://atifm.com/neuroviz/index.html" target="_blank" aria-label="Play demo"><i class="fa-solid fa-gamepad"></i></a>
+      </div>
+    </div>
+    <div class="card tint">
+      <div class="project-head">
+        <img class="project-icon" src="img/projects/garden.png" alt="">
+        <h3>gARden</h3>
+      </div>
       <p>An augmented reality gardening / education experience.</p>
-      <a href="#">View project →</a>
+      <div class="project-links">
+        <a href="https://www.youtube.com/watch?v=HkWaVXhlr7k" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
     </div>
     <div class="card tint">
-      <h3>Mobile VR Livestream</h3>
+      <div class="project-head">
+        <img class="project-icon" src="img/projects/VR.png" alt="">
+        <h3>Mobile VR Livestream</h3>
+      </div>
       <p>Streaming live video into a mobile VR headset.</p>
-      <a href="#">View project →</a>
+      <div class="project-links">
+        <a href="https://github.com/atifmmahmud/VRLivestream" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://youtu.be/dn59J38h5dM" target="_blank" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a>
+      </div>
     </div>
     <div class="card tint">
-      <h3>UNO in C++</h3>
+      <div class="project-head">
+        <img class="project-icon" src="img/projects/uno.png" alt="">
+        <h3>UNO in C++</h3>
+      </div>
       <p>A terminal-based implementation of the card game.</p>
-      <a href="#">View project →</a>
+      <div class="project-links">
+        <a href="https://github.com/atifmmahmud/UNO" target="_blank" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      </div>
     </div>
   </div>
 </section>
@@ -188,6 +284,7 @@
 --->
 
 <footer id="contact">
+  <h2>Drop me a line!</h2>
   <h3><a href="mailto:atif@atifm.com">atif@atifm.com</a></h2>
 </footer>
 
