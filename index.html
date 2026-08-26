@@ -38,7 +38,10 @@
 
 <nav>
   <strong>Atif M. Mahmud</strong>
-  <ul>
+  <button id="nav-toggle" class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <ul id="nav-menu">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
     <li><a href="#projects">Projects</a></li>
@@ -325,6 +328,21 @@
 </footer>
 
 <script>
+  const navToggle = document.getElementById('nav-toggle');
+  const navMenu = document.getElementById('nav-menu');
+
+  navToggle.addEventListener('click', () => {
+    const isOpen = navMenu.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', isOpen);
+  });
+
+  navMenu.addEventListener('click', (e) => {
+    if (e.target.tagName === 'A') {
+      navMenu.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
   const contactForm = document.getElementById('contact-form');
   const contactSuccess = document.getElementById('contact-success');
   const contactError = document.getElementById('contact-error');
@@ -351,6 +369,7 @@
       contactSuccess.hidden = false;
     } catch (err) {
       contactError.hidden = false;
+    } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Send message';
     }
