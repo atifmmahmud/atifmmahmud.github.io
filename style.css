@@ -104,15 +104,21 @@
   .tag {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    display: inline-block;
-    padding: 0.25rem 0.7rem;
-    margin: 0.2rem;
+    font-size: 0.875em;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.2rem 0.625rem;
+    margin: 0.175rem;
     border-radius: 999px;
     background: var(--accent);
     border: 1px solid rgba(255,255,255,0.2);
     color: var(--line);
     backdrop-filter: blur(6px);
 }
+
+.tag-svg { width: 0.9em; height: 0.9em; flex: none; }
+.tag i { font-size: 0.9em; line-height: 1; }
 
 .tag-secondary {
   background: var(--line);
@@ -122,6 +128,21 @@
 .tag-green {
   background: green;
   color: #fff;
+}
+
+.tag-rust-light {
+  background: #E3A88F;
+  color: #5C2A15;
+}
+
+.tag-rust-dark {
+  background: #9C5236;
+  color: #fff;
+}
+
+.tag-tan {
+  background: #D9B79E;
+  color: #5C2A15;
 }
 
 .card-title {
@@ -158,7 +179,7 @@
   }
   .photo:hover .caption { transform: translateY(0); }
 
-  dl { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 0; }
+  dl { display: grid; grid-template-columns: 1fr; gap: 12px; margin: 0; }
   dt { font-size: .75em; text-transform: uppercase; color: var(--grey); }
   dd { margin: 0; font-weight: 600; }
 
