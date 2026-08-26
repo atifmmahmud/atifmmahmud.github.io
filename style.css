@@ -130,6 +130,8 @@
 
 .tag i { font-size: 0.9em; line-height: 1; }
 
+.skill-row { display: flex; flex-wrap: wrap; }
+
 .tag-secondary {
   background: var(--line);
   color: var(--accent)
