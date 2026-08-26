@@ -21,7 +21,7 @@
   p { color: var(--grey); max-width: 60ch; margin: 0 0 1em; }
   a { color: var(--accent); text-decoration: none; }
   a:hover { text-decoration: underline; }
-  a.button {
+  .button {
     display: inline-block;
     background: var(--ink);
     color: #fff;
@@ -29,11 +29,17 @@
     border-radius: 12px;
     font-weight: 600;
     margin: .3em .5em .3em 0;
+    border: none;
+    font-family: inherit;
+    font-size: 1em;
+    cursor: pointer;
     transition: background .15s ease, color .15s ease;
   }
-  a.button:hover { background: var(--accent); text-decoration: none; }
-  a.button.ghost { background: var(--card); color: var(--ink); }
-  a.button.ghost:hover { background: var(--accent); color: #fff; }
+  .button:hover { background: var(--accent); text-decoration: none; }
+  .button.ghost { background: var(--card); color: var(--ink); }
+  .button.ghost:hover { background: var(--accent); color: #fff; }
+  .button:disabled { opacity: .6; cursor: not-allowed; }
+  .button:disabled:hover { background: var(--ink); }
 
   header, main, footer { max-width: 900px; margin: 0 auto; padding: 0 24px; }
 
@@ -193,6 +199,27 @@
 
   footer { text-align: center; padding-top: 60px; padding-bottom: 90px; }
   footer h2 { font-size: 1.8em; }
+
+  .contact-card { max-width: 480px; margin: 24px auto 0; text-align: left; }
+  .contact-form { display: flex; flex-direction: column; gap: 14px; }
+  .form-row { display: flex; flex-direction: column; gap: 6px; }
+  .form-row label { font-size: .8em; font-weight: 600; color: var(--grey); text-transform: uppercase; letter-spacing: .03em; }
+  .form-row input, .form-row textarea {
+    font-family: inherit;
+    font-size: 1em;
+    padding: .7em .9em;
+    border-radius: 10px;
+    border: 1px solid var(--line);
+    background: #fff;
+    color: var(--ink);
+  }
+  .form-row input:focus, .form-row textarea:focus { outline: none; border-color: var(--accent); }
+  .form-row textarea { resize: vertical; }
+  .contact-form .button { align-self: flex-start; margin: 0; }
+  .button.accent { background: var(--accent); }
+  .button.accent:hover { background: var(--ink); }
+  .contact-success { color: var(--accent); font-weight: 600; margin: 0; }
+  .contact-error { color: #B0413E; margin: 16px 0 0; }
 
   @media (max-width: 700px) {
     .cols-3, .cols-4 { grid-template-columns: 1fr 1fr; }
