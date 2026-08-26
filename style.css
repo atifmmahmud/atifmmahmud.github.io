@@ -82,8 +82,9 @@
   }
   .work-list .card:hover { box-shadow: 0 6px 18px rgba(20,21,26,.08); transform: translateY(-2px); }
 
-  .cols-3 .card { display: flex; flex-direction: column; min-height: 170px; }
+  .cols-3 .card { display: flex; flex-direction: column; min-height: 170px; transition: box-shadow .15s ease, transform .15s ease; }
   .cols-3 .card p { flex: 1; }
+  .cols-3 .card:hover { box-shadow: 0 6px 18px rgba(20,21,26,.08); transform: translateY(-2px); }
   .logo {
     flex: none; width: 80px; height: 80px; border-radius: 10px;
     background: var(--card); color: var(--grey); font-size: .65em;
