@@ -201,6 +201,8 @@
   }
   .row:first-child { border-top: none; padding-top: 0; }
   .row .meta { color: var(--grey); font-size: .9em; }
+  .degree-sub { display: block; color: var(--grey); font-size: .8em; font-weight: 400; margin-top: 2px; }
+  .education-list .card p { font-size: .9em; }
 
   .company { display: block; font-weight: 600; font-size: .85em; margin: 2px 0 6px; }
 
