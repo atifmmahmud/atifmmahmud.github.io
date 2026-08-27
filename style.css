@@ -86,12 +86,12 @@
   .card .row { border: none; padding: 0; }
   .card p { margin: .3em 0 0; }
 
-  .work-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
-  .work-list .card {
+  .work-list, .education-list { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .work-list .card, .education-list .card {
     display: flex; gap: 16px; align-items: flex-start;
     transition: box-shadow .15s ease, transform .15s ease;
   }
-  .work-list .card:hover { box-shadow: 0 6px 18px rgba(20,21,26,.08); transform: translateY(-2px); }
+  .work-list .card:hover, .education-list .card:hover { box-shadow: 0 6px 18px rgba(20,21,26,.08); transform: translateY(-2px); }
 
   .cols-3 .card { display: flex; flex-direction: column; min-height: 170px; transition: box-shadow .15s ease, transform .15s ease; }
   .cols-3 .card p { flex: 1; }
@@ -231,7 +231,7 @@
   @media (max-width: 700px) {
     .cols-3, .cols-4 { grid-template-columns: 1fr 1fr; }
     .cols-2 { grid-template-columns: 1fr; }
-    .work-list { grid-template-columns: 1fr; }
+    .work-list, .education-list { grid-template-columns: 1fr; }
     .nav-toggle { display: block; }
     nav ul {
       display: none;
