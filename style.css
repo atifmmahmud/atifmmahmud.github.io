@@ -65,7 +65,8 @@
 
   .name-row { display: flex; align-items: stretch; gap: 20px; }
   .name-col { display: flex; flex-direction: column; justify-content: center; min-width: 0; }
-  .avatar { width: auto; height: auto; aspect-ratio: 1/1; max-width: 150px; max-height: 150px; border-radius: 50%; object-fit: cover; flex: none; align-self: stretch; }
+  .avatar { width: auto; height: auto; aspect-ratio: 1/1; max-width: 220px; max-height: 220px; border-radius: 50%; object-fit: cover; flex: none; align-self: stretch; }
+  .header-links { margin-top: 12px; }
 
   section { padding: 50px 24px; border-top: 1px solid var(--line); max-width: 900px; margin: 0 auto; }
   .label { color: var(--accent); font-weight: 600; text-transform: uppercase; font-size: .8em; letter-spacing: .05em; }
