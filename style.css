@@ -207,10 +207,10 @@
 
   .company { display: block; font-weight: 600; font-size: .85em; margin: 2px 0 6px; }
 
-  footer { text-align: center; padding-top: 60px; padding-bottom: 90px; }
+  footer { padding-top: 60px; padding-bottom: 90px; }
   footer h2 { font-size: 1.8em; }
 
-  .contact-card { max-width: 480px; margin: 24px auto 0; text-align: left; }
+  .contact-card { margin: 24px 0 0; text-align: left; }
   .contact-form { display: flex; flex-direction: column; gap: 14px; }
   .form-row { display: flex; flex-direction: column; gap: 6px; }
   .form-row label { font-size: .8em; font-weight: 600; color: var(--grey); text-transform: uppercase; letter-spacing: .03em; }
